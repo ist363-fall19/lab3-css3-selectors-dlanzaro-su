@@ -1,4 +1,228 @@
-/*
-    Put all of your CSS rules here
-    You should end up with 40 selectors in total
-*/
+.header{
+    background-color: #242628;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, .15);
+}
+
+.header .container {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:0px;
+}
+
+#site-logo{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding:6px 12px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+#site-logo:hover{
+    border: 2px solid #fff;
+}
+
+ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+
+.navigation{
+    display:flex;
+}
+
+.navigation li a{
+    display: block;
+    height:72px;
+    line-height: 72px;
+    color:#fff;
+    padding:0px 15px;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    background-color: #202020
+}
+
+.main {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.posts {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.posts .post {
+    background-color: #242628;
+    padding: 15px;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .15);
+    flex-basis: 360px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.posts .post:hover {
+    background-color: #202020;
+}
+
+.posts .post:first-of-type,
+.posts .post:last-of-type {
+    flex-basis: 100%;
+    margin-right: 0;
+    flex-shrink: 1;
+}
+
+.posts .post:nth-child(odd) {
+    margin-right: 0;
+}
+
+.posts .post .post-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.posts .post:first-child > .post-title {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.post-title a {
+    color: white;
+}
+
+.post .post-teaser {
+    font-weight: 300;
+}
+
+.posts-more {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    height: 44px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #202020;
+    border-radius: 22px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .15);
+}
+
+.posts-more:hover {
+    border: 1px solid #0062e6;
+    background-color: #007bff;
+}
+
+.related h2{
+    font-size:24px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.related li{
+    border-bottom: 1px solid #202020;
+}
+
+.related li:first-child{
+    border-top: 1px solid #202020;
+}
+
+.related li a{
+    display: block;
+    padding:15px;
+    color:#999;
+    text-decoration: none;
+}
+
+.related li a:hover{
+    background-color: #202020;
+}
+
+.related li a[href*=".com"]::after{
+    content: 'External Link';
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align:top;
+}
+
+
+.related li a[href*="#"]{
+    pointer-events: none;
+}
+
+.ad{
+    margin-top: 30px;
+    display:flex;
+    justify-content: center;
+}
+
+.article{
+    background-color: #242628;
+    padding:15px;
+    margin:15px 0px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, .15);
+}
+
+.article-title{
+    font-size: 36px;
+    font-weight: 900;
+    margin-top:0px;
+    margin-bottom: 30px;
+}
+
+.article-body p:first-child:first-letter{
+    font-size: 72px;
+}
+
+.article-body{
+    line-height: 2;
+}
+
+.article-body a{
+    color: #fff;
+}
+
+.aware::first-line{
+    font-style: italic;
+    font-weight: bold;
+}
+
+blockquote{
+    padding:15px;
+    margin:30px 0px;
+    font-style: italic;
+}
+
+blockquote:first-of-type{
+    border:6px double #07b07e;
+    background-color: #20c997;
+}
+
+blockquote:last-of-type{
+    border:6px double #0062e6;
+    background-color: #007bff;
+}
+
+p:last-of-type{
+    font-size:14px;
+}
